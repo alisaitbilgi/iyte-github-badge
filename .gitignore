@@ -1,0 +1,23 @@
+
+npm-debug.log
+node_modules
+.bashrc
+
+# IntelliJ
+.idea
+.idea_modules
+*.iml
+*.eml
+
+# VS Code
+.vscode
+
+
+# MACOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
