@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Github Badge</title>
-	<script async src="index.js"></script>
+	<script src="index.js"></script>
 	<link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
@@ -18,23 +18,33 @@
 					<div class="badge-itself">
 						<div class="name-part">
 							<div class="user-img">
-								<img src="./img/social-coding.png" />
+								<img class="avatar_url" src=""/>
 							</div>
-							<div class="user-name">
-								ali sait bilgi
-							</div>
+							<div class="name"></div>
 						</div>
 						<div class="latest-active-part">
-							Ruby, Javascript, Java
+							<span class="company"></span>
 						</div>
 						<div class="stats-part">
 							<div class="stats">
-								<div>repos: 45</div>
-								<div>forks: 11</div>
+								<div>
+									<span>repos: </span>
+									<span class="public_repos"></span>
+								</div>
+								<div>
+									<span>following: </span>
+									<span class="following"></span>
+								</div>
 							</div>
 							<div class="stats">
-								<div>followers: 822</div>
-								<div>stargazzers: 319</div>
+								<div>
+									<span>followers: </span>
+									<span class="followers"></span>
+								</div>
+								<div>
+									<span>gists: </span>
+									<span class="public_gists"></span>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -43,7 +53,7 @@
 			<div class="img-part"></div>
 		</div>
 		<div class="body-bottom">
-			<input placeholder="Your GitHub username"/>
+			<input placeholder="Your GitHub username" class="search-inp"/>
 		</div>
 	</div>
 	<div class="navbar"></div>
