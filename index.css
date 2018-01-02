@@ -48,8 +48,68 @@
 	width: 50%;
 }
 
-.body-top > .img-part {
+.body-top > .table-part {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-direction: column;
 	width: 50%;
+}
+
+.table-part > .fetch-list {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	height: 350px;
+	margin-bottom: 65px;
+}
+
+.fetch-list > .header {
+	display: flex;
+	font-weight: bold;
+	font-size: 25px;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+
+.fetch-list > table {
+	display: flex;
+	height: 100%;
+	max-height: 300px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+tbody {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+table > tr, td {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	font-size: 20px;
+	height: 40px;
+	border-bottom: 1px solid #ddd;
+	border-radius: 4px;
+}
+
+td > span {
+	padding: 0 10px;
+}
+
+td > .success {
+	color: #009bff;
+	cursor: pointer;
+}
+
+td > .fail {
+	cursor: not-allowed;
+	opacity: 0.6;
+	color: #797979;
 }
 
 .content-part > .social-content {
@@ -73,32 +133,35 @@
 }
 
 .badge-content > .badge-itself {
-	width: 380px;
+	width: 360px;
 	height: 200px;
-	border: 1px solid red;
+	border: 1px solid #ddd;
+	border-radius: 4px;
 }
 
 .badge-itself > .name-part {
 	display: flex;
     height: 50px;
+	border-bottom: 1px solid #ddd;
 }
 
 .name-part > .user-img {
-	height: 50px;
-	width: 50px;
+	height: 58px;
+	width: 55px;
+	border-radius: 1px;
 }
 
 .user-img > img {
 	padding: 3px;
-	width: 44px;
-	height: 44px;
+	width: 45px;
+	height: 45px;
 }
 
 .name-part > .name {
 	display: flex;
 	align-items: center;
 	padding: 0 30px;
-	width: 330px;
+	width: 300px;
 }
 
 .badge-itself > .latest-active-part {
@@ -106,26 +169,45 @@
 	align-items: center;
     height: 50px;
 	padding-left: 80px;
-	border: 1px solid red;
 }
 
 .badge-itself > .stats-part {
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
     height: 100px;
+	border-top: 1px solid #ddd;
 }
 
 .stats-part > .stats {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	width: 50%;
-	padding: 0 30px;
+	width: 40%;
+	padding: 0 10px;
+	font-size: 19px;
+	text-shadow: 1px 1px 0 #fff;
 }
 
 .stats > .left {
+	display: flex;
 	justify-content: flex-end;
+	align-items: center;
 }
 
+.stats > .right {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+	align-items: center;
+}
 
+.following, .followers, .public_repos, .public_gists {
+	display: flex;
+	justify-content: flex-end;
+	font-weight: bold;
+	font-size: 24px;
+	padding: 0 8px;
+	width: 32px;
+}
 
